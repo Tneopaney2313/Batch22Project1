@@ -10,13 +10,10 @@ public class MaxAndMinArray {
         for (int n:num){
             if (n > max){
                 max=n;
-
             }
             if (n < min){
                 min=n;
-
             }
-
         }
         System.out.println("Max num: " + max);
         System.out.println("Min Num: " + min);

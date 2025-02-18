@@ -14,15 +14,6 @@ public class FibonacciSeries {
             firstNum = secondNum;
             secondNum = next;
 
-
-
         }
-
-
-
     }
-
-
-
-
 }

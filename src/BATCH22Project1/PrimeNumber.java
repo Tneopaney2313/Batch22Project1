@@ -32,7 +32,6 @@ public class PrimeNumber {
         scan.close();
         }
 
-
     }
 
 
