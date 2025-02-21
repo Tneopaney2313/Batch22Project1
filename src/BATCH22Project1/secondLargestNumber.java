@@ -7,29 +7,29 @@ public class secondLargestNumber {
 
         int[] num = {12, 92, 17, 68, 23, 30, 37, 79, 7};
 
-        int largest = num[0];
-        int secondLargest = num[0];
+        int largest;
+        int secondLargest;
 
-        for (int n : num) {
-            if (n < largest) {
+        if (num[0]>num[1]) {
+            largest = num[0];
+            secondLargest=num[1];
+        }else{
+            largest= num[1];
+            secondLargest=num[0];
+        }
+
+        for (int i=2; i<num.length; i++) {
+
+            if (num[i]>largest) {
                 secondLargest = largest;
-                largest = n;
+                largest = num[i];
 
-                System.out.println(n);
-
+            }else if (num[i]>secondLargest){
+                secondLargest=num[i];
             }
-           /* if (n < min){
-                min=n;
-
-            }
-
         }
-        System.out.println("Max num: " + max);
-        System.out.println("Min Num: " + min);
 
-            */
-
-        }
+        System.out.println("Second Largest = " + secondLargest);
     }
 }
 
